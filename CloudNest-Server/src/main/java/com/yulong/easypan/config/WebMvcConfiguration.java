@@ -19,6 +19,9 @@ import springfox.documentation.spring.web.plugins.Docket;
  */
 @Configuration
 @Slf4j
+/**
+ * swagger接口文档
+ */
 public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
     @Bean

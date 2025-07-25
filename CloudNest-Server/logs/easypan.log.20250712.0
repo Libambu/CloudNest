@@ -1,0 +1,22 @@
+2025-07-12 23:41:25 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 16376 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-07-12 23:41:25 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-07-12 23:41:26 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-07-12 23:41:26 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-12 23:41:26 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-07-12 23:41:27 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-07-12 23:41:27 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-07-12 23:41:27 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-07-12 23:41:27 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-07-12 23:41:28 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-07-12 23:41:28 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 2948 ms
+2025-07-12 23:41:29 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][26]-> 准备生成接口文档
+2025-07-12 23:41:29 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][49]-> 开始静态资源映射
+2025-07-12 23:41:30 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-07-12 23:41:30 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-07-12 23:41:30 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 6.451 seconds (JVM running for 7.842)
+2025-07-12 23:41:58 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-12 23:41:58 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-07-12 23:41:58 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2025-07-12 23:41:58 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/favicon.ico
+2025-07-12 23:41:58 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/favicon.ico
+2025-07-12 23:41:58 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/favicon.ico]

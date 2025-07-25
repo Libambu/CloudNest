@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yulong.easypan.mappers.userInfoMapper">
+    <select id="selectByEmail" resultType="com.yulong.easypan.entity.pjo.UserInfo">
+        select * from easypan.user_info where email=#{email}
+    </select>
+</mapper>

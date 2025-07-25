@@ -1,0 +1,35 @@
+2025-07-05 20:49:30 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 10680 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-07-05 20:49:30 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-07-05 20:49:31 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][doScan][166]-> No MyBatis mapper was found in '[com.yulong.easypan]' package. Please check your configuration.
+2025-07-05 20:49:31 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-07-05 20:49:31 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-05 20:49:31 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-05 20:49:31 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-07-05 20:49:31 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-07-05 20:49:31 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-07-05 20:49:31 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-07-05 20:49:32 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-07-05 20:49:32 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1480 ms
+2025-07-05 20:49:32 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][26]-> 准备生成接口文档
+2025-07-05 20:49:32 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][49]-> 开始静态资源映射
+2025-07-05 20:49:33 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-07-05 20:49:33 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-07-05 20:49:33 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.258 seconds (JVM running for 4.166)
+2025-07-05 23:35:12 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 9076 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-07-05 23:35:12 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-07-05 23:35:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][doScan][166]-> No MyBatis mapper was found in '[com.easypan.mappers]' package. Please check your configuration.
+2025-07-05 23:35:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][doScan][166]-> No MyBatis mapper was found in '[com.yulong.easypan]' package. Please check your configuration.
+2025-07-05 23:35:13 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-07-05 23:35:13 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-05 23:35:13 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-07-05 23:35:14 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-07-05 23:35:14 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-07-05 23:35:14 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-07-05 23:35:14 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-07-05 23:35:15 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-07-05 23:35:15 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 2614 ms
+2025-07-05 23:35:15 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][26]-> 准备生成接口文档
+2025-07-05 23:35:15 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][49]-> 开始静态资源映射
+2025-07-05 23:35:16 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-07-05 23:35:16 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-07-05 23:35:17 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 5.623 seconds (JVM running for 6.791)
