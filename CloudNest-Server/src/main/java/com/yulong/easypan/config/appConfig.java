@@ -8,7 +8,14 @@ public class appConfig {
     @Value("${spring.mail.username:}")
     private String sendUserName;
 
+    @Value("${admin.emails:}")
+    private String adminUserl;
+
     public String getSendUserName() {
         return sendUserName;
     }
+    public String getAdminUserl(){
+        return adminUserl;
+    }
+
 }

@@ -4,4 +4,7 @@
     <update id="disableEmailCode" >
         update easypan.email_code set status = 1 where email = #{email} and status = 0;
     </update>
+    <select id="SelectCodeByEmailANDCode" resultType="com.yulong.easypan.entity.pjo.EmailCode">
+        select * from easypan.email_code where email = #{email} and code = #{Code};
+    </select>
 </mapper>

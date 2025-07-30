@@ -1,5 +1,6 @@
 package com.yulong.easypan.service;
 
+import com.yulong.easypan.entity.dto.SessionWebUserDto;
 import com.yulong.easypan.entity.pjo.UserInfo;
 import org.springframework.stereotype.Service;
 
@@ -7,4 +8,6 @@ import org.springframework.stereotype.Service;
 public interface EmailCodeService {
     UserInfo test(String s);
     void sendEmailCode(String email, Integer type);
+    void checkCode(String email,String Code);
+
 }

@@ -10,4 +10,6 @@ public interface EmailCodeMapper {
     public void insert(EmailCode emailCode);
 
     public void disableEmailCode(String email);
+
+    EmailCode SelectCodeByEmailANDCode(String email,String Code);
 }

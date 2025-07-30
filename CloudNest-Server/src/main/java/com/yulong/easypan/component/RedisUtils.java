@@ -2,11 +2,13 @@ package com.yulong.easypan.component;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
+@Component("redisUtils")
 public class RedisUtils<V>{
     @Resource
     private RedisTemplate<String,V> redisTemplate;

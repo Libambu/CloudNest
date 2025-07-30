@@ -1,9 +1,11 @@
 package com.yulong.easypan.entity.pjo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
 
 
 import java.time.LocalDateTime;
+
 
 public class EmailCode {
     private String code;
@@ -11,6 +13,7 @@ public class EmailCode {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
     private Integer status;
+    public EmailCode(){}
 
     public EmailCode(String Code, String Email, LocalDateTime lds,Integer status){
         this.code = Code;
@@ -24,7 +27,7 @@ public class EmailCode {
     }
 
     public void setEmail(String email) {
-        email = email;
+        this.email = email;
     }
 
     public String getCode() {
@@ -32,7 +35,7 @@ public class EmailCode {
     }
 
     public void setCode(String code) {
-        code = code;
+        this.code = code;
     }
 
     public LocalDateTime getCreateTime() {
@@ -40,7 +43,7 @@ public class EmailCode {
     }
 
     public void setCreateTime(LocalDateTime createTime) {
-        createTime = createTime;
+        this.createTime = createTime;
     }
 
     public Integer getStatus() {
@@ -48,6 +51,6 @@ public class EmailCode {
     }
 
     public void setStatus(Integer status) {
-        status = status;
+        this.status = status;
     }
 }

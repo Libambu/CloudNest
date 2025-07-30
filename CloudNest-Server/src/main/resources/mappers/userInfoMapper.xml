@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yulong.easypan.mappers.userInfoMapper">
+    <insert id="insert">
+        insert into easypan.user_info values(#{userId},#{nickName},#{email},#{qqOpenId},#{qqAvatar},#{password},#{joinTime},#{lastLoginTime},#{status},#{userSpace},#{totalSpace})
+
+    </insert>
     <select id="selectByEmail" resultType="com.yulong.easypan.entity.pjo.UserInfo">
         select * from easypan.user_info where email=#{email}
+    </select>
+    <select id="selectBynickName" resultType="com.yulong.easypan.entity.pjo.UserInfo">
+        select * from easypan.user_info where nick_name = #{nickName}
     </select>
 </mapper>
