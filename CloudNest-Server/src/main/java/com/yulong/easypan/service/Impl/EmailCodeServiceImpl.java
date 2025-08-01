@@ -42,10 +42,6 @@ public class EmailCodeServiceImpl implements EmailCodeService {
     @Resource
     private RedisComponent redisComponent;
 
-    @Override
-    public UserInfo test(String s) {
-        return userInfoMapper.selectByEmail(s);
-    }
 
     /**
      * 发送邮箱验证码service

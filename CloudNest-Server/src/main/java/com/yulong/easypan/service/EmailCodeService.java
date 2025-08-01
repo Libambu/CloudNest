@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface EmailCodeService {
-    UserInfo test(String s);
     void sendEmailCode(String email, Integer type);
     void checkCode(String email,String Code);
 

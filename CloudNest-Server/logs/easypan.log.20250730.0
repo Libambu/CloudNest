@@ -1,0 +1,117 @@
+2025-07-30 15:23:55 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 24496 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-07-30 15:23:55 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-07-30 15:23:56 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-07-30 15:23:56 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-30 15:23:56 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-07-30 15:23:57 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-07-30 15:23:57 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-07-30 15:23:57 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-07-30 15:23:57 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-07-30 15:23:57 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-07-30 15:23:57 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1519 ms
+2025-07-30 15:23:58 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-07-30 15:23:58 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-07-30 15:23:58 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-07-30 15:23:58 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-07-30 15:23:58 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.424 seconds (JVM running for 4.224)
+2025-07-30 15:24:36 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-30 15:24:36 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-07-30 15:24:36 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-07-30 15:25:02 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-07-30 15:25:03 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-07-30 15:25:03 [INFO][com.yulong.easypan.service.Impl.EmailCodeServiceImpl][sendEmailCode][66]-> 验证码为48222
+2025-07-30 15:25:03 [INFO][com.yulong.easypan.service.Impl.EmailCodeServiceImpl][sendMailCode][112]-> 邮件发送失败
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.qq.com, 465; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.qq.com. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.qq.com, 465; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.qq.com
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:448)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:361)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:356)
+	at com.yulong.easypan.service.Impl.EmailCodeServiceImpl.sendMailCode(EmailCodeServiceImpl.java:110)
+	at com.yulong.easypan.service.Impl.EmailCodeServiceImpl.sendEmailCode(EmailCodeServiceImpl.java:68)
+	at com.yulong.easypan.service.Impl.EmailCodeServiceImpl$$FastClassBySpringCGLIB$$bff4b245.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.yulong.easypan.service.Impl.EmailCodeServiceImpl$$EnhancerBySpringCGLIB$$d84409c5.sendEmailCode(<generated>)
+	at com.yulong.easypan.controller.userInfoController.sendEmailCode(userInfoController.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.qq.com, 465; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:437)
+	... 57 common frames omitted
+Caused by: java.net.UnknownHostException: smtp.qq.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:335)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 61 common frames omitted
+2025-07-30 15:25:03 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 邮件发送失败] with root cause
+com.yulong.easypan.exception.BusinessException: 邮件发送失败
+2025-07-30 15:26:13 [INFO][com.yulong.easypan.service.Impl.EmailCodeServiceImpl][sendEmailCode][66]-> 验证码为48646
+2025-07-30 15:27:09 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 账号或密码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 账号或密码错误
+2025-07-30 15:27:31 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-07-30 15:27:44 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/getUseSpace
+2025-07-30 15:27:44 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/getUseSpace
+2025-07-30 15:27:44 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/getUseSpace]
+2025-07-30 15:27:44 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/file/loadDataList
+2025-07-30 15:27:44 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/file/loadDataList
+2025-07-30 15:27:44 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/file/loadDataList]
+2025-07-30 15:27:53 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-07-30 15:27:53 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.

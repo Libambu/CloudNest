@@ -1,0 +1,261 @@
+2025-08-01 09:17:31 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 14604 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 09:17:31 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 09:17:32 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 09:17:32 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 09:17:32 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-08-01 09:17:32 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 09:17:32 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 09:17:32 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 09:17:32 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 09:17:32 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 09:17:32 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1363 ms
+2025-08-01 09:17:33 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 09:17:33 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 09:17:33 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 09:17:33 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 09:17:34 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.213 seconds (JVM running for 4.032)
+2025-08-01 09:18:08 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 09:18:08 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 09:18:08 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 2 ms
+2025-08-01 09:18:16 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 09:19:02 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-01 09:19:02 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-01 09:19:03 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 账号或密码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 账号或密码错误
+2025-08-01 09:19:13 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 09:19:23 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-08-01 09:19:23 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/file/loadDataList
+2025-08-01 09:19:23 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/file/loadDataList
+2025-08-01 09:19:23 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/file/loadDataList]
+2025-08-01 09:30:46 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-08-01 09:30:46 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/file/loadDataList
+2025-08-01 09:30:46 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/file/loadDataList
+2025-08-01 09:30:46 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/file/loadDataList]
+2025-08-01 09:31:11 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-08-01 09:31:11 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/file/loadDataList
+2025-08-01 09:31:11 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/file/loadDataList
+2025-08-01 09:31:11 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/file/loadDataList]
+2025-08-01 09:32:55 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2025-08-01 09:32:55 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/file/loadDataList
+2025-08-01 09:32:55 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/file/loadDataList
+2025-08-01 09:32:55 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/file/loadDataList]
+2025-08-01 09:34:47 [INFO][io.lettuce.core.protocol.CommandHandler][log][217]-> null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-01 09:34:47 [INFO][io.lettuce.core.protocol.ConnectionWatchdog][log][171]-> Reconnecting, last destination was /127.0.0.1:6379
+2025-08-01 09:34:47 [WARN][io.lettuce.core.protocol.ConnectionWatchdog][log][151]-> Cannot reconnect to [127.0.0.1/<unresolved>:6379]: Connection refused: getsockopt: /127.0.0.1:6379
+2025-08-01 09:34:56 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-01 09:34:56 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-01 10:27:18 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 27608 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:27:18 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:27:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:27:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:27:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:27:20 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:27:20 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:27:20 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:27:20 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:27:20 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:27:20 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1565 ms
+2025-08-01 10:27:21 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:27:21 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:27:21 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:27:21 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:27:21 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.44 seconds (JVM running for 4.12)
+2025-08-01 10:28:04 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:28:04 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:28:04 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-01 10:28:04 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/favicon.ico
+2025-08-01 10:28:04 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/favicon.ico
+2025-08-01 10:28:04 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/favicon.ico]
+2025-08-01 10:28:14 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:28:26 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:28:27 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:29:33 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 16664 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:29:33 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:29:34 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:29:34 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:29:34 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:29:34 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:29:35 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:29:35 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:29:35 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:29:35 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:29:35 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1334 ms
+2025-08-01 10:29:35 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:29:35 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:29:36 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:29:36 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:29:36 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.044 seconds (JVM running for 3.635)
+2025-08-01 10:29:38 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:29:38 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:29:38 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2025-08-01 10:29:41 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:30:57 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:30:58 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:32:17 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 8372 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:32:17 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:32:18 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:32:18 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:32:18 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:32:19 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:32:19 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:32:19 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:32:19 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:32:19 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:32:19 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1370 ms
+2025-08-01 10:32:20 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:32:20 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:32:20 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:32:20 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:32:20 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.08 seconds (JVM running for 3.768)
+2025-08-01 10:32:31 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:32:31 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:32:31 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 2 ms
+2025-08-01 10:32:32 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:33:05 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 6568 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:33:05 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:33:06 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:33:06 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:33:06 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:33:07 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:33:07 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:33:07 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:33:07 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:33:07 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:33:07 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1738 ms
+2025-08-01 10:33:08 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:33:08 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:33:08 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:33:08 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:33:08 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.605 seconds (JVM running for 5.041)
+2025-08-01 10:33:12 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:33:12 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:33:12 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 2 ms
+2025-08-01 10:35:36 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 图片验证码错误] with root cause
+com.yulong.easypan.exception.BusinessException: 图片验证码错误
+2025-08-01 10:40:18 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 23344 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:40:18 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:40:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:40:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:40:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:40:19 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:40:19 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:40:19 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:40:19 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:40:20 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:40:20 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1540 ms
+2025-08-01 10:40:20 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:40:20 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:40:21 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:40:21 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:40:21 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.461 seconds (JVM running for 4.146)
+2025-08-01 10:40:24 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:40:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:40:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-01 10:40:27 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-01 10:40:27 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录] with root cause
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-01 10:51:26 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 23896 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:51:26 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:51:27 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:51:27 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:51:27 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:51:28 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:51:28 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:51:28 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:51:28 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:51:28 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:51:28 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1318 ms
+2025-08-01 10:51:28 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:51:28 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:51:29 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:51:29 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:51:29 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.045 seconds (JVM running for 3.679)
+2025-08-01 10:51:34 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:51:34 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:51:34 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-01 10:51:41 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-01 10:54:38 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 11996 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:54:38 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:54:39 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:54:39 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:54:39 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:54:39 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:54:39 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:54:39 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:54:39 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:54:39 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:54:39 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1520 ms
+2025-08-01 10:54:40 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:54:40 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:54:40 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:54:40 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:54:41 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.308 seconds (JVM running for 3.942)
+2025-08-01 10:55:04 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:55:04 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:55:04 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-01 10:55:07 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-01 10:56:06 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 27800 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:56:06 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:56:06 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:56:06 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:56:06 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:56:07 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:56:07 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:56:07 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:56:07 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:56:07 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:56:07 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1343 ms
+2025-08-01 10:56:08 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:56:08 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:56:08 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:56:08 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:56:08 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.017 seconds (JVM running for 3.695)
+2025-08-01 10:56:12 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:56:12 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:56:12 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2025-08-01 10:57:10 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 4332 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-01 10:57:10 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-01 10:57:11 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-01 10:57:11 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-01 10:57:11 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-08-01 10:57:11 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-01 10:57:11 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:57:11 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-01 10:57:11 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-01 10:57:11 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-01 10:57:11 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1608 ms
+2025-08-01 10:57:12 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-01 10:57:12 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][52]-> 开始静态资源映射
+2025-08-01 10:57:13 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-01 10:57:13 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-01 10:57:13 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.563 seconds (JVM running for 4.243)
+2025-08-01 10:57:27 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-01 10:57:27 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-01 10:57:27 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms

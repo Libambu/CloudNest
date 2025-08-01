@@ -30,4 +30,14 @@ public class StringTools {
     public static  String encodeByMd5(String orignString){
         return orignString.isEmpty()?null: DigestUtils.md5Hex(orignString);
     }
+
+    public static boolean pathIsOk(String path){
+        if(path.isEmpty()){
+            return true;
+        }
+        if(path.contains("../")||path.contains(".\\")){
+            return false;
+        }
+        return true;
+    }
 }

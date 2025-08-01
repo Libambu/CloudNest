@@ -1,9 +1,21 @@
 package com.yulong.easypan.controller;
 
+import com.yulong.easypan.entity.constants.Constants;
+import com.yulong.easypan.entity.dto.SessionWebUserDto;
 import com.yulong.easypan.entity.enums.ResponseCodeEnum;
 import com.yulong.easypan.entity.vo.ResponseVO;
 import com.yulong.easypan.exception.BusinessException;
+import com.yulong.easypan.utils.StringTools;
+import lombok.extern.slf4j.Slf4j;
 
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+
+@Slf4j
 public class ABaseController {
     private static final String STATUS_SUCCESS = "success";
     private static final String STATUS_ERROR = "error";
@@ -35,5 +47,54 @@ public class ABaseController {
         vo.setInfo(ResponseCodeEnum.CODE_500.getMsg());
         vo.setDate(t);
         return vo;
+    }
+
+    /**
+     * 将本地文件输出给前端
+     * @param response
+     * @param filePath
+     */
+    protected void readFile(HttpServletResponse response, String filePath) {
+        if (!StringTools.pathIsOk(filePath)) {
+            return;
+        }
+        OutputStream out = null;
+        FileInputStream in = null;
+        try {
+            File file = new File(filePath);
+            if (!file.exists()) {
+                return;
+            }
+            in = new FileInputStream(file);
+            byte[] byteData = new byte[1024];
+            out = response.getOutputStream();
+            int len = 0;
+            while ((len = in.read(byteData)) != -1) {
+                out.write(byteData, 0, len);
+            }
+            out.flush();
+        } catch (Exception e) {
+            log.error("读取文件异常", e);
+        } finally {
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    log.error("IO异常", e);
+                }
+            }
+            if (in != null) {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    log.error("IO异常", e);
+                }
+            }
+        }
+    }
+
+    protected SessionWebUserDto getUserInfoSession(HttpSession session){
+        SessionWebUserDto sessionWebUserDto = (SessionWebUserDto) session.getAttribute(Constants.SESSION_KEY);
+        return sessionWebUserDto;
     }
 }

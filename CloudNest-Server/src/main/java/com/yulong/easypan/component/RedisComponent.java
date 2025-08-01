@@ -24,4 +24,16 @@ public class RedisComponent {
     public void saveUserSpaceUse(String userId, UserSpaceDto userSpaceDto){
         redisUtils.setex(Constants.REDIS_KEY_USER_SPACE_USE+userId,userSpaceDto,60*60*24);
     }
+
+    public UserSpaceDto getUserSpaceDto(String userId){
+        UserSpaceDto userSpaceDto = (UserSpaceDto) redisUtils.get(Constants.REDIS_KEY_USER_SPACE_USE+userId);
+        if(userSpaceDto==null){
+            userSpaceDto = new UserSpaceDto();
+            //TODO 查询当前用户已经上传文件的大小
+            userSpaceDto.setUseSpace(0L);
+            userSpaceDto.setTotalSpace(getSysSettingsDTO().getUserInitUserSpace()*Constants.MB);
+            saveUserSpaceUse(userId,userSpaceDto);
+        }
+        return userSpaceDto;
+    }
 }

@@ -16,6 +16,7 @@ import com.yulong.easypan.service.EmailCodeService;
 import com.yulong.easypan.service.UserInfoService;
 import com.yulong.easypan.utils.StringTools;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.catalina.User;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -102,10 +103,33 @@ public class UserInfoServiceImpl implements UserInfoService {
         }
         //用户空间
         UserSpaceDto userSpaceDto = new UserSpaceDto();
+        //TODO 查询当前用户已经上传文件的大小
         userSpaceDto.setUseSpace(userInfo.getUserSpace());
         userSpaceDto.setTotalSpace(userInfo.getTotalSpace());
         redisComponent.saveUserSpaceUse(userInfo.getUserId(), userSpaceDto);
         return sessionWebUserDto;
 
     }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void resetPwd(String email, String password, String emailCode) {
+        UserInfo userInfo = userInfoMapper.selectByEmail(email);
+        if(userInfo==null){
+            throw new BusinessException("用户未注册");
+        }
+        emailCodeService.checkCode(email,emailCode);
+        userInfoMapper.resetPwd(email,StringTools.encodeByMd5(password));
+    }
+
+    @Override
+    public void updateQqAvatarByUserId(String qqAvatar, String userId) {
+        userInfoMapper.updateQqAvatarByUserId(qqAvatar,userId);
+    }
+
+    @Override
+    public void updatePwdByUserId(String md5pwd, String userid) {
+        userInfoMapper.updatePwdByUserId(md5pwd,userid);
+    }
+
 }
