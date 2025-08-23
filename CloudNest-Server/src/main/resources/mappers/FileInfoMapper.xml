@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yulong.easypan.mappers.FileInfoMapper">
+    <insert id="insert">
+        insert into file_info values
+            (
+                #{userId},
+                #{fileId},
+                #{fileMd5},
+                #{filePid},
+                #{fileSize},
+                #{fileName},
+                #{fileCover},
+                #{fiePath},
+                #{createTime},
+                #{lastUpdateTime},
+                #{folderType},
+                #{fileCategory},
+                #{fileType},
+                #{status},
+                #{recoverTime},
+                #{delFlag}
+            )
+    </insert>
+
+    <select id="LoadDateList" resultType="com.yulong.easypan.entity.vo.FileInfoVO">
+        select * from file_info
+        <where>
+            <if test="fileId != null and fileId != ''">
+                AND file_id = #{fileId}
+            </if>
+            <!-- 用户ID -->
+            <if test="userId != null and userId != ''">
+                AND user_id = #{userId}
+            </if>
+            <!-- 文件MD5 -->
+            <if test="fileMd5 != null and fileMd5 != ''">
+                AND file_md5 = #{fileMd5}
+            </if>
+            <!-- 父级ID -->
+            <if test="filePid != null and filePid != ''">
+                AND file_pid = #{filePid}
+            </if>
+            <!-- 文件大小 -->
+            <if test="fileSize != null">
+                AND file_size = #{fileSize}
+            </if>
+            <!-- 文件名称 -->
+            <if test="fileName != null and fileName != ''">
+                AND file_name = #{fileName}
+            </if>
+            <!-- 封面 -->
+            <if test="fileCover != null and fileCover != ''">
+                AND file_cover = #{fileCover}
+            </if>
+            <!-- 文件路径 -->
+            <if test="filePath != null and filePath != ''">
+                AND file_path = #{filePath}
+            </if>
+            <!-- 创建时间 -->
+            <if test="createTime != null and createTime != ''">
+                AND create_time = #{createTime}
+            </if>
+            <if test="createTimeEnd != null and createTimeEnd != ''">
+                AND create_time &lt;= #{createTimeEnd}
+            </if>
+            <!-- 最后更新时间 -->
+            <if test="lastUpdateTime != null and lastUpdateTime != ''">
+                AND last_update_time = #{lastUpdateTime}
+            </if>
+            <!-- 是否文件夹 -->
+            <if test="folderType != null">
+                AND folder_type = #{folderType}
+            </if>
+            <!-- 文件大类 -->
+            <if test="fileCategory != null">
+                AND file_category = #{fileCategory}
+            </if>
+            <!-- 文件细分类型 -->
+            <if test="fileType != null">
+                AND file_type = #{fileType}
+            </if>
+            <!-- 转码状态 -->
+            <if test="status != null">
+                AND status = #{status}
+            </if>
+
+            <!-- 回收站时间 -->
+            <if test="recoveryTime != null and recoveryTime != ''">
+                AND recovery_time = #{recoveryTime}
+            </if>
+            <!-- 删除标记 -->
+            <if test="delFlag != null">
+                AND del_flag = #{delFlag}
+            </if>
+        </where>
+        order by last_update_time desc
+    </select>
+    <select id="selectUserSpace" resultType="java.lang.Long">
+        select ifnull(sum(file_size),0) from file_info where user_id = #{userId}
+    </select>
+    <select id="selectAllfileinfo" resultType="com.yulong.easypan.entity.pjo.FileInfo">
+        select * from file_info
+        <where>
+            <if test="fileId != null and fileId != ''">
+                AND file_id = #{fileId}
+            </if>
+            <!-- 用户ID -->
+            <if test="userId != null and userId != ''">
+                AND user_id = #{userId}
+            </if>
+            <!-- 文件MD5 -->
+            <if test="fileMd5 != null and fileMd5 != ''">
+                AND file_md5 = #{fileMd5}
+            </if>
+            <!-- 父级ID -->
+            <if test="filePid != null and filePid != ''">
+                AND file_pid = #{filePid}
+            </if>
+            <!-- 文件大小 -->
+            <if test="fileSize != null">
+                AND file_size = #{fileSize}
+            </if>
+            <!-- 文件名称 -->
+            <if test="fileName != null and fileName != ''">
+                AND file_name = #{fileName}
+            </if>
+            <!-- 封面 -->
+            <if test="fileCover != null and fileCover != ''">
+                AND file_cover = #{fileCover}
+            </if>
+            <!-- 文件路径 -->
+            <if test="filePath != null and filePath != ''">
+                AND file_path = #{filePath}
+            </if>
+            <!-- 创建时间 -->
+            <if test="createTime != null and createTime != ''">
+                AND create_time = #{createTime}
+            </if>
+            <if test="createTimeEnd != null and createTimeEnd != ''">
+                AND create_time &lt;= #{createTimeEnd}
+            </if>
+            <!-- 最后更新时间 -->
+            <if test="lastUpdateTime != null and lastUpdateTime != ''">
+                AND last_update_time = #{lastUpdateTime}
+            </if>
+            <!-- 是否文件夹 -->
+            <if test="folderType != null">
+                AND folder_type = #{folderType}
+            </if>
+            <!-- 文件大类 -->
+            <if test="fileCategory != null">
+                AND file_category = #{fileCategory}
+            </if>
+            <!-- 文件细分类型 -->
+            <if test="fileType != null">
+                AND file_type = #{fileType}
+            </if>
+            <!-- 转码状态 -->
+            <if test="status != null">
+                AND status = #{status}
+            </if>
+
+            <!-- 回收站时间 -->
+            <if test="recoveryTime != null and recoveryTime != ''">
+                AND recovery_time = #{recoveryTime}
+            </if>
+            <!-- 删除标记 -->
+            <if test="delFlag != null">
+                AND del_flag = #{delFlag}
+            </if>
+        </where>
+    </select>
+</mapper>

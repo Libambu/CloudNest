@@ -146,7 +146,7 @@ public class userInfoController extends ABaseController{
      */
     @GetMapping("/getAvatar/{userId}")
     @ApiOperation("获取用户头像")
-    @GlobalInterceptor(checklogin = true)
+    @GlobalInterceptor(checklogin = false)
     public void getAvatar(HttpServletResponse response,HttpSession httpSession,@PathVariable("userId") String userId){
         String avatarFolderName = appConfig.getBasePath() + Constants.FILE_FOLDER_FILE + Constants.FILE_FOLDER_AVATAR_NAME;
         File fileFold = new File(avatarFolderName);
@@ -166,6 +166,8 @@ public class userInfoController extends ABaseController{
             response.setContentType("image/jpg");
             readFile(response,default_avatar);
         }
+        response.setContentType("image/jpg");
+        readFile(response,avatarPath);
     }
 
     private void printNoDefaultImage(HttpServletResponse response){
@@ -191,7 +193,7 @@ public class userInfoController extends ABaseController{
         return getSuccessResponseVO(sessionWebUserDto);
     }
 
-    @GetMapping("/getUseSpace")
+    @PostMapping("/getUseSpace")
     @GlobalInterceptor
     @ApiOperation("获取使用空间")
     public ResponseVO getUseSpace(HttpSession session){
@@ -200,8 +202,8 @@ public class userInfoController extends ABaseController{
         return getSuccessResponseVO(userSpaceDto);
     }
 
-    @GetMapping("/logout")
-    @GlobalInterceptor
+    @PostMapping("/logout")
+    @GlobalInterceptor(checklogin = false)
     @ApiOperation("退出登录")
     public ResponseVO logout(HttpSession session){
         //销毁当前这个 HttpSession 实例。

@@ -25,7 +25,7 @@ public class ABaseController {
         responseVO.setStatus(STATUS_SUCCESS);
         responseVO.setCode(ResponseCodeEnum.CODE_200.getCode());
         responseVO.setInfo(ResponseCodeEnum.CODE_200.getMsg());
-        responseVO.setDate(t);
+        responseVO.setdata(t);
         return responseVO;
     }
     protected <T> ResponseVO getBusinessErrorResponseVO(BusinessException e, T t){
@@ -37,7 +37,7 @@ public class ABaseController {
             vo.setCode(e.getCode());
         }
         vo.setInfo(e.getMessage());
-        vo.setDate(t);
+        vo.setdata(t);
         return vo;
     }
     protected <T> ResponseVO getServerErrorResponseVO(T t){
@@ -45,7 +45,7 @@ public class ABaseController {
         vo.setStatus(STATUS_ERROR);
         vo.setCode(ResponseCodeEnum.CODE_500.getCode());
         vo.setInfo(ResponseCodeEnum.CODE_500.getMsg());
-        vo.setDate(t);
+        vo.setdata(t);
         return vo;
     }
 

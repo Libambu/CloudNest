@@ -11,7 +11,7 @@ public class ExceptionHander extends ABaseController{
     /**
      * 自定义异常处理
      */
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler(BusinessException.class)
     @ResponseBody
     public ResponseVO handle(Exception e){
         if(e instanceof BusinessException){

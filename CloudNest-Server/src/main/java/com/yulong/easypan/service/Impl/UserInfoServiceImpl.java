@@ -11,6 +11,7 @@ import com.yulong.easypan.entity.pjo.EmailCode;
 import com.yulong.easypan.entity.pjo.UserInfo;
 import com.yulong.easypan.exception.BusinessException;
 import com.yulong.easypan.mappers.EmailCodeMapper;
+import com.yulong.easypan.mappers.FileInfoMapper;
 import com.yulong.easypan.mappers.userInfoMapper;
 import com.yulong.easypan.service.EmailCodeService;
 import com.yulong.easypan.service.UserInfoService;
@@ -37,6 +38,8 @@ public class UserInfoServiceImpl implements UserInfoService {
     private RedisComponent redisComponent;
     @Autowired
     private appConfig appconfig;
+    @Autowired
+    private FileInfoMapper fileInfoMapper;
 
     /**
      * 用户注册操作,开启事务，防止disable邮箱验证码之后，但是insert出错
@@ -103,8 +106,9 @@ public class UserInfoServiceImpl implements UserInfoService {
         }
         //用户空间
         UserSpaceDto userSpaceDto = new UserSpaceDto();
-        //TODO 查询当前用户已经上传文件的大小
-        userSpaceDto.setUseSpace(userInfo.getUserSpace());
+        //查询当前用户已经上传文件的大小
+        Long size = fileInfoMapper.selectUserSpace(userInfo.getUserId());
+        userSpaceDto.setUseSpace(size);
         userSpaceDto.setTotalSpace(userInfo.getTotalSpace());
         redisComponent.saveUserSpaceUse(userInfo.getUserId(), userSpaceDto);
         return sessionWebUserDto;

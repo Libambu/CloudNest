@@ -60,7 +60,7 @@ public class EmailCodeServiceImpl implements EmailCodeService {
         }
         String Code = StringTools.getRandomNumber(Constants.LENGTH_5);
         log.info("验证码为"+Code);
-        //TODO 向对方邮件发送验证码
+        // 向对方邮件发送验证码
         sendMailCode(email,Code);
         //将之前发的验证码置为无效
         emailCodeMapper.disableEmailCode(email);

@@ -23,4 +23,6 @@ public interface userInfoMapper {
 
     @Update("update easypan.user_info set password = #{md5pwd} where user_id = #{userid}")
     void updatePwdByUserId(String md5pwd, String userid);
+
+    Integer updateUserSpace(String userId, Long userSpace, Long totalSpace);
 }

@@ -43,6 +43,25 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
         return docket;
     }
 
+    @Bean
+    public Docket docket2() {
+        log.info("准备生成接口文档");
+        ApiInfo apiInfo = new ApiInfoBuilder()
+                .title("easypan")
+                .version("2.0")
+                .description("easypan项目接口文档")
+                .build();
+        Docket docket = new Docket(DocumentationType.SWAGGER_2)
+                .groupName("文件操作接口文档")
+                .apiInfo(apiInfo)
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.yulong.easypan.controller"))
+                .paths(PathSelectors.ant("/api/file/**"))
+                .build();
+        System.out.println("----------------");
+        return docket;
+    }
+
 
     /**
      * 设置静态资源映射

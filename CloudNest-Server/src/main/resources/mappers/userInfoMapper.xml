@@ -5,6 +5,17 @@
         insert into easypan.user_info values(#{userId},#{nickName},#{email},#{qqOpenId},#{qqAvatar},#{password},#{joinTime},#{lastLoginTime},#{status},#{userSpace},#{totalSpace})
 
     </insert>
+    <update id="updateUserSpace">
+        update user_info
+        <set>
+            <if test="userSpace!=null">
+                user_space = #{userSpace}
+            </if>
+            <if test="totalSpace!=null">
+                total_space = #{totalSpace}
+            </if>
+        </set>
+    </update>
     <select id="selectByEmail" resultType="com.yulong.easypan.entity.pjo.UserInfo">
         select * from easypan.user_info where email=#{email}
     </select>

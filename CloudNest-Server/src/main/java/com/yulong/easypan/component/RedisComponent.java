@@ -4,6 +4,8 @@ package com.yulong.easypan.component;
 import com.yulong.easypan.entity.constants.Constants;
 import com.yulong.easypan.entity.dto.SysSettingsDTO;
 import com.yulong.easypan.entity.dto.UserSpaceDto;
+import com.yulong.easypan.mappers.FileInfoMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -12,6 +14,8 @@ import javax.annotation.Resource;
 public class RedisComponent {
     @Resource
     private RedisUtils redisUtils;
+    @Autowired
+    private FileInfoMapper fileInfoMapper;
 
     public SysSettingsDTO getSysSettingsDTO(){
         SysSettingsDTO sysSettingsDTO =(SysSettingsDTO) redisUtils.get(Constants.REDIS_KEY_SYS_SETTING);
@@ -29,9 +33,10 @@ public class RedisComponent {
         UserSpaceDto userSpaceDto = (UserSpaceDto) redisUtils.get(Constants.REDIS_KEY_USER_SPACE_USE+userId);
         if(userSpaceDto==null){
             userSpaceDto = new UserSpaceDto();
-            //TODO 查询当前用户已经上传文件的大小
-            userSpaceDto.setUseSpace(0L);
-            userSpaceDto.setTotalSpace(getSysSettingsDTO().getUserInitUserSpace()*Constants.MB);
+            // 查询当前用户已经上传文件的大小
+            Long size = fileInfoMapper.selectUserSpace(userId);
+            userSpaceDto.setUseSpace(size);
+            userSpaceDto.setTotalSpace(Constants.MB* getSysSettingsDTO().getUserInitUserSpace());
             saveUserSpaceUse(userId,userSpaceDto);
         }
         return userSpaceDto;

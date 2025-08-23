@@ -21,7 +21,7 @@ public class RedisUtils<V>{
             redisTemplate.opsForValue().set(key,value);
             return true;
         }catch (Exception e){
-            log.info("设置redis 失败",key,value);
+            log.info("设置redis失败{}，{}",key,value);
             return false;
         }
     }
