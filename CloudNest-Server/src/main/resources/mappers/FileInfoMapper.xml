@@ -11,14 +11,14 @@
                 #{fileSize},
                 #{fileName},
                 #{fileCover},
-                #{fiePath},
+                #{filePath},
                 #{createTime},
                 #{lastUpdateTime},
                 #{folderType},
                 #{fileCategory},
                 #{fileType},
                 #{status},
-                #{recoverTime},
+                #{recoveryTime},
                 #{delFlag}
             )
     </insert>

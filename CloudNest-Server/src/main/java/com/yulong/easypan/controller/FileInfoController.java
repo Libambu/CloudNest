@@ -35,8 +35,8 @@ public class FileInfoController extends ABaseController {
     /**
      * 根据条件分类查询
      */
-    @PostMapping("loadDataList")
-    @GlobalInterceptor
+    @RequestMapping("loadDataList")
+    //@GlobalInterceptor
     @ApiOperation("文件分页查询")
     public ResponseVO LoadDateList(HttpSession session, FileInfoQuery query,String category){
 
@@ -44,7 +44,7 @@ public class FileInfoController extends ABaseController {
         if(fileCategoryEnums != null){
             query.setFileCategory(fileCategoryEnums.getCategory());
         }
-        query.setUserId(getUserInfoSession(session).getUserId());
+        //query.setUserId(getUserInfoSession(session).getUserId());
         query.setDelFlag(FileDelFlagEnums.USING.getFlag());
         query.setOrderBy("last_update_time desc");
         PaginationResultVO result = fileInfoService.LoadDateList(query);

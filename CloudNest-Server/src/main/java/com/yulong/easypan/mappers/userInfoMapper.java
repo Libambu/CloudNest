@@ -11,7 +11,9 @@ import java.time.LocalDateTime;
 public interface userInfoMapper {
     public UserInfo selectByEmail(String email);
     public UserInfo selectBynickName(String nickName);
+
     void insert(UserInfo userInfo);
+
     @Update("update easypan.user_info set last_login_time = #{lastLoginTime} where email=#{email}")
     void updatelogin(String email, LocalDateTime lastLoginTime);
 

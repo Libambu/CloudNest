@@ -15,6 +15,7 @@
                 total_space = #{totalSpace}
             </if>
         </set>
+        where user_id = #{userId}
     </update>
     <select id="selectByEmail" resultType="com.yulong.easypan.entity.pjo.UserInfo">
         select * from easypan.user_info where email=#{email}
