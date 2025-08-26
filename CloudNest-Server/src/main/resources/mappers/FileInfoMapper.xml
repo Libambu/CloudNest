@@ -22,6 +22,81 @@
                 #{delFlag}
             )
     </insert>
+    <update id="updateStautusAndCover">
+        update file_info
+        <set>
+            <!-- 文件MD5 -->
+            <if test="updatefile.fileMd5 != null and updatefile.fileMd5 != ''">
+                file_md5 = #{updatefile.fileMd5},
+            </if>
+
+            <!-- 父级ID -->
+            <if test="updatefile.filePid != null and updatefile.filePid != ''">
+                file_pid = #{updatefile.filePid},
+            </if>
+
+            <!-- 文件大小 -->
+            <if test="updatefile.fileSize != null">
+                file_size = #{updatefile.fileSize},
+            </if>
+
+            <!-- 文件名称 -->
+            <if test="updatefile.fileName != null and updatefile.fileName != ''">
+                file_name = #{updatefile.fileName},
+            </if>
+
+            <!-- 封面 -->
+            <if test="updatefile.fileCover != null and updatefile.fileCover != ''">
+                file_cover = #{updatefile.fileCover},
+            </if>
+
+            <!-- 文件路径 -->
+            <if test="updatefile.filePath != null and updatefile.filePath != ''">
+                file_path = #{updatefile.filePath},
+            </if>
+
+            <!-- 创建时间 -->
+            <if test="updatefile.createTime != null and updatefile.createTime != ''">
+                create_time = #{updatefile.createTime},
+            </if>
+
+            <!-- 最后更新时间 -->
+            <if test="updatefile.lastUpdateTime != null and updatefile.lastUpdateTime != ''">
+                last_update_time = #{updatefile.lastUpdateTime},
+            </if>
+
+            <!-- 是否文件夹 -->
+            <if test="updatefile.folderType != null">
+                folder_type = #{updatefile.folderType},
+            </if>
+
+            <!-- 文件大类 -->
+            <if test="updatefile.fileCategory != null">
+                file_category = #{updatefile.fileCategory},
+            </if>
+
+            <!-- 文件细分类型 -->
+            <if test="updatefile.fileType != null">
+                file_type = #{updatefile.fileType},
+            </if>
+
+            <!-- 转码状态 -->
+            <if test="updatefile.status != null">
+                status = #{updatefile.status},
+            </if>
+
+            <!-- 回收站时间 -->
+            <if test="updatefile.recoveryTime != null and updatefile.recoveryTime != ''">
+                recovery_time = #{updatefile.recoveryTime},
+            </if>
+
+            <!-- 删除标记 -->
+            <if test="updatefile.delFlag != null">
+                del_flag = #{updatefile.delFlag},
+            </if>
+        </set>
+        where file_id = #{file_Id} and user_id = #{user_Id} and status = #{oldstatus}
+    </update>
 
     <select id="LoadDateList" resultType="com.yulong.easypan.entity.vo.FileInfoVO">
         select * from file_info
@@ -170,5 +245,8 @@
                 AND del_flag = #{delFlag}
             </if>
         </where>
+    </select>
+    <select id="selectByUserAndFileId" resultType="com.yulong.easypan.entity.pjo.FileInfo">
+        select  * from file_info where  file_id = #{fileId} and user_id = #{userId}
     </select>
 </mapper>

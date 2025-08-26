@@ -30,4 +30,10 @@ public interface FileInfoService {
      */
     UploadResultVO upLoadFile(SessionWebUserDto webUserDto, String fileId, MultipartFile file, String fileName, String filePid, String fileMd5, Integer chunkIndex, Integer chunks);
 
+    /**
+     * 异步进行文件合并
+     * @param fileId
+     * @param sessionWebUserDto
+     */
+    public void transferFile(String fileId,SessionWebUserDto sessionWebUserDto);
 }

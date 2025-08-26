@@ -14,11 +14,13 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -28,7 +30,7 @@ import java.util.List;
 @Api(tags = "文件操作")
 @RestController("fileInfoController")
 @RequestMapping("file/")
-public class FileInfoController extends ABaseController {
+public class FileInfoController extends CommonFileController {
     @Autowired
     private FileInfoService fileInfoService;
 
@@ -76,5 +78,10 @@ public class FileInfoController extends ABaseController {
         SessionWebUserDto webUserDto = getUserInfoSession(session);
         UploadResultVO uploadResultVO = fileInfoService.upLoadFile(webUserDto,fileId,file,fileName,filePid,fileMd5,chunkIndex,chunks);
         return getSuccessResponseVO(uploadResultVO);
+    }
+    @RequestMapping("/getImage/{imageFolder}/{imageName}")
+    @GlobalInterceptor
+    public void getImage(HttpServletResponse response, @PathVariable("imageFolder") String imageFolder,@PathVariable("imageName") String imageName){
+        super.getImage(response,imageFolder,imageName);
     }
 }

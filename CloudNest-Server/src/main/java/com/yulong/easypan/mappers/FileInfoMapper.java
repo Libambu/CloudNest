@@ -17,4 +17,8 @@ public interface FileInfoMapper {
     List<FileInfo> selectAllfileinfo(FileInfoQuery infoQuery);
 
     void insert(FileInfo fileInfo);
+
+    FileInfo selectByUserAndFileId(String fileId, String userId);
+
+    void updateStautusAndCover(String file_Id, String user_Id, FileInfo updatefile, Integer oldstatus);
 }
