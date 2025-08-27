@@ -2,6 +2,7 @@ package com.yulong.easypan.component;
 
 
 import com.yulong.easypan.entity.constants.Constants;
+import com.yulong.easypan.entity.dto.DownloadFileDto;
 import com.yulong.easypan.entity.dto.SysSettingsDTO;
 import com.yulong.easypan.entity.dto.UserSpaceDto;
 import com.yulong.easypan.mappers.FileInfoMapper;
@@ -63,6 +64,14 @@ public class RedisComponent {
     public void saveFileTempSize(String userId,String fileId,Long fileSize){
         Long currentSize = getFileTempSize(userId,fileId);
         redisUtils.setex(Constants.REDIS_KEY_USER_TEMP_SIZE+"_"+userId+"_"+fileId,currentSize+fileSize,Constants.REDIS_KEY_ONE_HOUR);
+    }
+
+    public void saveDownloadCode(String code, DownloadFileDto downloadFileDto) {
+        redisUtils.setex(Constants.REDIS_KEY_DOWNLOAD + code, downloadFileDto, Constants.REDIS_KEY_FIVEMIN);
+    }
+
+    public DownloadFileDto getDownloadCode(String code) {
+        return (DownloadFileDto) redisUtils.get(Constants.REDIS_KEY_DOWNLOAD + code);
     }
 
 }

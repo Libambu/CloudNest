@@ -1,12 +1,16 @@
 package com.yulong.easypan.controller;
 
+import com.yulong.easypan.component.RedisComponent;
 import com.yulong.easypan.config.appConfig;
 import com.yulong.easypan.entity.constants.Constants;
+import com.yulong.easypan.entity.dto.DownloadFileDto;
 import com.yulong.easypan.entity.enums.FileCategoryEnums;
 import com.yulong.easypan.entity.enums.FileFolderTypeEnums;
+import com.yulong.easypan.entity.enums.ResponseCodeEnum;
 import com.yulong.easypan.entity.pjo.FileInfo;
 import com.yulong.easypan.entity.query.FileInfoQuery;
 import com.yulong.easypan.entity.vo.ResponseVO;
+import com.yulong.easypan.exception.BusinessException;
 import com.yulong.easypan.mappers.FileInfoMapper;
 import com.yulong.easypan.service.FileInfoService;
 import com.yulong.easypan.utils.StringTools;
@@ -15,12 +19,16 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.net.URLEncoder;
 import java.util.List;
 
 @RestController
 public class CommonFileController extends ABaseController{
+    @Autowired
+    private RedisComponent redisComponent;
     @Autowired
     private appConfig appConfig;
     @Autowired
@@ -96,4 +104,39 @@ public class CommonFileController extends ABaseController{
         return getSuccessResponseVO(fileInfoList);
     }
 
+    protected ResponseVO createDownloadUrl(String fileId, String userId) {
+        FileInfo fileInfo = fileInfoMapper.selectByUserAndFileId(fileId,userId);
+        if (fileInfo == null) {
+            throw new BusinessException(ResponseCodeEnum.CODE_600);
+        }
+        if (FileFolderTypeEnums.FOLDER.getType().equals(fileInfo.getFolderType())) {
+            throw new BusinessException(ResponseCodeEnum.CODE_600);
+        }
+        String code = StringTools.getRandomNumber(Constants.LENGTH_50);
+        DownloadFileDto downloadFileDto = new DownloadFileDto();
+        downloadFileDto.setDownloadCode(code);
+        downloadFileDto.setFileId(fileInfo.getFileId());
+        downloadFileDto.setFilePath(fileInfo.getFilePath());
+        downloadFileDto.setFileName(fileInfo.getFileName());
+        redisComponent.saveDownloadCode(code, downloadFileDto);
+        return getSuccessResponseVO(code);
+    }
+
+
+    protected void download(HttpServletRequest request, HttpServletResponse response, String code) throws Exception {
+        DownloadFileDto downloadFileDto = redisComponent.getDownloadCode(code);
+        if (null == downloadFileDto) {
+            return;
+        }
+        String filePath = appConfig.getBasePath() + Constants.FILE_FOLDER_FILE + downloadFileDto.getFilePath();
+        String fileName = downloadFileDto.getFileName();
+        response.setContentType("application/x-msdownload; charset=UTF-8");
+        if (request.getHeader("User-Agent").toLowerCase().indexOf("msie") > 0) {//IE浏览器
+            fileName = URLEncoder.encode(fileName, "UTF-8");
+        } else {
+            fileName = new String(fileName.getBytes("UTF-8"), "ISO8859-1");
+        }
+        response.setHeader("Content-Disposition", "attachment;filename=\"" + fileName + "\"");
+        readFile(response, filePath);
+    }
 }

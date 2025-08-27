@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -186,4 +187,29 @@ public class FileInfoController extends CommonFileController {
         fileInfoService.changeFileFolder(fileIds, filePid, webUserDto.getUserId());
         return getSuccessResponseVO(null);
     }
+
+    /**
+     * 创建文件下载链接
+     * @param session
+     * @param fileId
+     * @return
+     */
+    @RequestMapping("/createDownloadUrl/{fileId}")
+    @GlobalInterceptor()
+    public ResponseVO createDownloadUrl(HttpSession session, @PathVariable("fileId")  String fileId) {
+        return super.createDownloadUrl(fileId, getUserInfoSession(session).getUserId());
+    }
+
+    /**
+     * 下载文件
+     * @param request
+     * @param response
+     * @param code
+     * @throws Exception
+     */
+    @RequestMapping("/download/{code}")
+    public void download(HttpServletRequest request, HttpServletResponse response, @PathVariable("code") String code) throws Exception {
+        super.download(request, response, code);
+    }
+
 }

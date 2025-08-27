@@ -22,4 +22,7 @@ public class Constants {
     public static final Long REDIS_KEY_ONE_HOUR = 3600l;
     public static final String TS_NAME = "index.ts";
     public static final String M3U8_NAME = "index.m3u8";
+    public static final String REDIS_KEY_DOWNLOAD = "easypan:download";
+    public static final Integer REDIS_KEY_FIVEMIN = 60*5;
+    public static final Integer LENGTH_50 = 50;
 }

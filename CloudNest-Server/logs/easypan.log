@@ -404,3 +404,137 @@ com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
 2025-08-27 11:46:49 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
 2025-08-27 11:55:49 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
 2025-08-27 11:55:49 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-27 19:07:08 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 9260 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-27 19:07:08 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-27 19:07:08 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-27 19:07:08 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-27 19:07:08 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-08-27 19:07:09 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-27 19:07:09 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:07:09 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-27 19:07:09 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-27 19:07:09 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-27 19:07:09 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1497 ms
+2025-08-27 19:07:10 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-27 19:07:10 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-27 19:07:10 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-27 19:07:10 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:07:10 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-27 19:07:11 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.493 seconds (JVM running for 4.121)
+2025-08-27 19:07:26 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-27 19:07:26 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-27 19:07:26 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-27 19:07:27 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/favicon.ico
+2025-08-27 19:07:27 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/favicon.ico
+2025-08-27 19:07:27 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/favicon.ico]
+2025-08-27 19:07:58 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-27 19:14:01 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 19860 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-27 19:14:01 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-27 19:14:02 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-27 19:14:02 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-27 19:14:02 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-27 19:14:03 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-27 19:14:03 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:14:03 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-27 19:14:03 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-27 19:14:03 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-27 19:14:03 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1456 ms
+2025-08-27 19:14:04 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-27 19:14:04 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-27 19:14:04 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-27 19:14:04 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:14:04 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-27 19:14:04 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.401 seconds (JVM running for 4.015)
+2025-08-27 19:14:06 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-27 19:14:06 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-27 19:14:06 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-27 19:14:11 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-27 19:14:11 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-27 19:14:26 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/file/download/24688789389561572094300369724191061900340835878375
+2025-08-27 19:14:26 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/file/download/24688789389561572094300369724191061900340835878375
+2025-08-27 19:14:26 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/file/download/24688789389561572094300369724191061900340835878375]
+2025-08-27 19:15:40 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/file/download/24688789389561572094300369724191061900340835878375
+2025-08-27 19:15:40 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/file/download/24688789389561572094300369724191061900340835878375
+2025-08-27 19:15:40 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/file/download/24688789389561572094300369724191061900340835878375]
+2025-08-27 19:17:13 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/file/download/09915628995033847268579786262055560716007408295525
+2025-08-27 19:17:13 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/file/download/09915628995033847268579786262055560716007408295525
+2025-08-27 19:17:13 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/file/download/09915628995033847268579786262055560716007408295525]
+2025-08-27 19:17:55 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-27 19:17:55 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-27 19:18:07 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 24264 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-27 19:18:07 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-27 19:18:08 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-27 19:18:08 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-27 19:18:08 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-08-27 19:18:08 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-27 19:18:09 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:18:09 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-27 19:18:09 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-27 19:18:09 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-27 19:18:09 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1354 ms
+2025-08-27 19:18:09 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-27 19:18:09 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-27 19:18:09 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-27 19:18:10 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:18:10 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-27 19:18:10 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.35 seconds (JVM running for 3.876)
+2025-08-27 19:18:11 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-27 19:18:11 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-27 19:18:11 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-27 19:18:11 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/file/download/09915628995033847268579786262055560716007408295525
+2025-08-27 19:18:11 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/file/download/09915628995033847268579786262055560716007408295525
+2025-08-27 19:18:11 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/file/download/09915628995033847268579786262055560716007408295525]
+2025-08-27 19:18:12 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-27 19:18:12 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-27 19:18:13 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-27 19:18:41 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for GET /api/file/download/null
+2025-08-27 19:18:41 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for GET /api/file/download/null
+2025-08-27 19:18:41 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/file/download/null]
+2025-08-27 19:18:56 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-27 19:18:56 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-27 19:24:44 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 26304 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-27 19:24:44 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-27 19:24:45 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-27 19:24:45 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-27 19:24:45 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-27 19:24:45 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-27 19:24:45 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:24:45 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-27 19:24:45 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-27 19:24:45 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-27 19:24:45 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1480 ms
+2025-08-27 19:24:46 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-27 19:24:46 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-27 19:24:46 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-27 19:24:47 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-27 19:24:47 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-27 19:24:47 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.684 seconds (JVM running for 4.284)
+2025-08-27 19:24:49 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-27 19:24:49 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-27 19:24:49 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2025-08-27 19:24:50 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-27 19:24:50 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-27 19:24:50 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-27 19:31:21 [INFO][io.lettuce.core.protocol.CommandHandler][log][217]-> null Unexpected exception during request: java.net.SocketException: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-27 19:31:21 [INFO][io.lettuce.core.protocol.ConnectionWatchdog][log][171]-> Reconnecting, last destination was /127.0.0.1:6379
+2025-08-27 19:31:21 [WARN][io.lettuce.core.protocol.ConnectionWatchdog][log][151]-> Cannot reconnect to [127.0.0.1/<unresolved>:6379]: Connection refused: getsockopt: /127.0.0.1:6379
+2025-08-27 19:31:21 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-27 19:31:21 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
