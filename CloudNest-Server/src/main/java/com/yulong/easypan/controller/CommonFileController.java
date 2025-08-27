@@ -3,15 +3,21 @@ package com.yulong.easypan.controller;
 import com.yulong.easypan.config.appConfig;
 import com.yulong.easypan.entity.constants.Constants;
 import com.yulong.easypan.entity.enums.FileCategoryEnums;
+import com.yulong.easypan.entity.enums.FileFolderTypeEnums;
 import com.yulong.easypan.entity.pjo.FileInfo;
+import com.yulong.easypan.entity.query.FileInfoQuery;
+import com.yulong.easypan.entity.vo.ResponseVO;
 import com.yulong.easypan.mappers.FileInfoMapper;
 import com.yulong.easypan.service.FileInfoService;
 import com.yulong.easypan.utils.StringTools;
+import io.swagger.models.Response;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.util.List;
 
 @RestController
 public class CommonFileController extends ABaseController{
@@ -76,4 +82,18 @@ public class CommonFileController extends ABaseController{
         }
         readFile(response,finalPath);
     }
+
+
+    public ResponseVO getFolderInfo(String path, String userId) {
+        String[] pathArray = path.split("/");
+        FileInfoQuery infoQuery = new FileInfoQuery();
+        infoQuery.setUserId(userId);
+        infoQuery.setFolderType(FileFolderTypeEnums.FOLDER.getType());
+        infoQuery.setFileIdArray(pathArray);
+        String orderBy = "field(file_id,\"" + StringUtils.join(pathArray, "\",\"") + "\")";
+        infoQuery.setOrderBy(orderBy);
+        List<FileInfo> fileInfoList = fileInfoMapper.selectAllfileinfo(infoQuery);
+        return getSuccessResponseVO(fileInfoList);
+    }
+
 }

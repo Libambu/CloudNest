@@ -310,6 +310,9 @@ public class FileInfoServiceImpl implements FileInfoService {
         }
 
     }
+
+
+
     private void union(String firPath,String toFilePath,String fileName,Boolean delSource) throws Exception {
         File dir = new File(firPath);
         if(!dir.exists()){
@@ -371,5 +374,78 @@ public class FileInfoServiceImpl implements FileInfoService {
         ProcessUtils.executeCommand(cmd, false);
         //删除index.ts
         new File(tsPath).delete();
+    }
+
+    @Override
+    public FileInfo newFolder(String filePid, String userId, String folderName) {
+        checkFileName(filePid,userId,folderName,FileFolderTypeEnums.FOLDER.getType());
+        Date curDate = new Date();
+        FileInfo fileInfo = new FileInfo();
+        fileInfo.setFileId(StringTools.getRandomNumber(10));
+        fileInfo.setUserId(userId);
+        fileInfo.setFilePid(filePid);
+        fileInfo.setFileName(folderName);
+        fileInfo.setFolderType(FileFolderTypeEnums.FOLDER.getType());
+        fileInfo.setCreateTime(curDate);
+        fileInfo.setLastUpdateTime(curDate);
+        fileInfo.setStatus(FileStatusEnums.USING.getStatus());
+        fileInfo.setDelFlag(FileDelFlagEnums.USING.getFlag());
+        fileInfoMapper.insert(fileInfo);
+        return fileInfo;
+    }
+
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public FileInfo rename(String fileId, String userId, String fileName) {
+        FileInfo fileInfo = this.fileInfoMapper.selectByUserAndFileId(fileId, userId);
+        if (fileInfo == null) {
+            throw new BusinessException("文件不存在");
+        }
+        if (fileInfo.getFileName().equals(fileName)) {
+            return fileInfo;
+        }
+        String filePid = fileInfo.getFilePid();
+        checkFileName(filePid, userId, fileName, fileInfo.getFolderType());
+        //文件获取后缀
+        if (FileFolderTypeEnums.FILE.getType().equals(fileInfo.getFolderType())) {
+            fileName = fileName + StringTools.getFileSuffix(fileInfo.getFileName());
+        }
+        Date curDate = new Date();
+        FileInfo dbInfo = new FileInfo();
+        dbInfo.setFileName(fileName);
+        dbInfo.setLastUpdateTime(curDate);
+        fileInfoMapper.updateStautusAndCover(fileId, userId,dbInfo,dbInfo.getStatus());
+
+        FileInfoQuery fileInfoQuery = new FileInfoQuery();
+        fileInfoQuery.setFilePid(filePid);
+        fileInfoQuery.setUserId(userId);
+        fileInfoQuery.setFileName(fileName);
+        fileInfoQuery.setDelFlag(FileDelFlagEnums.USING.getFlag());
+        List<FileInfo> fileInfos = fileInfoMapper.selectAllfileinfo(fileInfoQuery);
+        if (fileInfos.size() > 1) {
+            throw new BusinessException("文件名" + fileName + "已经存在");
+        }
+        fileInfo.setFileName(fileName);
+        fileInfo.setLastUpdateTime(curDate);
+        return fileInfo;
+    }
+
+    @Override
+    public void changeFileFolder(String fileIds, String filePid, String userId) {
+
+    }
+
+    private void checkFileName(String filePid, String userId, String fileName, Integer folderType) {
+        FileInfoQuery fileInfoQuery = new FileInfoQuery();
+        fileInfoQuery.setFolderType(folderType);
+        fileInfoQuery.setFileName(fileName);
+        fileInfoQuery.setFilePid(filePid);
+        fileInfoQuery.setUserId(userId);
+        fileInfoQuery.setDelFlag(FileDelFlagEnums.USING.getFlag());
+        List<FileInfo> fileInfos = fileInfoMapper.selectAllfileinfo(fileInfoQuery);
+        if (fileInfos.size() > 0) {
+            throw new BusinessException("此目录下已存在同名文件，请修改名称");
+        }
     }
 }

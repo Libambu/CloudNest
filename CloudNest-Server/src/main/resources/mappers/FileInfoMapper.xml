@@ -56,12 +56,12 @@
             </if>
 
             <!-- 创建时间 -->
-            <if test="updatefile.createTime != null and updatefile.createTime != ''">
+            <if test="updatefile.createTime != null">
                 create_time = #{updatefile.createTime},
             </if>
 
             <!-- 最后更新时间 -->
-            <if test="updatefile.lastUpdateTime != null and updatefile.lastUpdateTime != ''">
+            <if test="updatefile.lastUpdateTime != null">
                 last_update_time = #{updatefile.lastUpdateTime},
             </if>
 
@@ -136,11 +136,11 @@
             <if test="createTime != null and createTime != ''">
                 AND create_time = #{createTime}
             </if>
-            <if test="createTimeEnd != null and createTimeEnd != ''">
+            <if test="createTimeEnd != null">
                 AND create_time &lt;= #{createTimeEnd}
             </if>
             <!-- 最后更新时间 -->
-            <if test="lastUpdateTime != null and lastUpdateTime != ''">
+            <if test="lastUpdateTime != null">
                 AND last_update_time = #{lastUpdateTime}
             </if>
             <!-- 是否文件夹 -->
@@ -212,11 +212,11 @@
             <if test="createTime != null and createTime != ''">
                 AND create_time = #{createTime}
             </if>
-            <if test="createTimeEnd != null and createTimeEnd != ''">
+            <if test="createTimeEnd != null ">
                 AND create_time &lt;= #{createTimeEnd}
             </if>
             <!-- 最后更新时间 -->
-            <if test="lastUpdateTime != null and lastUpdateTime != ''">
+            <if test="lastUpdateTime != null ">
                 AND last_update_time = #{lastUpdateTime}
             </if>
             <!-- 是否文件夹 -->
@@ -243,6 +243,21 @@
             <!-- 删除标记 -->
             <if test="delFlag != null">
                 AND del_flag = #{delFlag}
+            </if>
+            <if test="fileIdArray != null and fileIdArray.length>0">
+                and file_id in
+                <foreach collection="fileIdArray" item="item" separator="," open="(" close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="excludeFileIdArray != null and excludeFileIdArray.length>0">
+                and file_id not in
+                <foreach collection="excludeFileIdArray" item="item" separator="," open="(" close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="orderBy != null">
+                order by #{orderBy}
             </if>
         </where>
     </select>

@@ -2,6 +2,7 @@ package com.yulong.easypan.service;
 
 import com.sun.mail.imap.protocol.INTERNALDATE;
 import com.yulong.easypan.entity.dto.SessionWebUserDto;
+import com.yulong.easypan.entity.pjo.FileInfo;
 import com.yulong.easypan.entity.query.FileInfoQuery;
 import com.yulong.easypan.entity.result.UploadResultVO;
 import com.yulong.easypan.entity.vo.PaginationResultVO;
@@ -36,4 +37,10 @@ public interface FileInfoService {
      * @param sessionWebUserDto
      */
     public void transferFile(String fileId,SessionWebUserDto sessionWebUserDto);
+
+    FileInfo newFolder(String fileId, String userId, String folderName);
+
+    FileInfo rename(String fileId, String userId, String fileName);
+
+    void changeFileFolder(String fileIds, String filePid, String userId);
 }
