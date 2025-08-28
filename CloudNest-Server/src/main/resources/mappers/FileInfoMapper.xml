@@ -22,6 +22,30 @@
                 #{delFlag}
             )
     </insert>
+    <insert id="insertBatch" parameterType="com.yulong.easypan.entity.pjo.FileShare">
+        INSERT INTO file_share(
+        share_id,
+        file_id,
+        user_id,
+        valid_type,
+        expire_time,
+        share_time,
+        code,
+        show_count
+        )values
+        <foreach collection="list" item="item" separator=",">
+            (
+            #{item.shareId},
+            #{item.fileId},
+            #{item.userId},
+            #{item.validType},
+            #{item.expireTime},
+            #{item.shareTime},
+            #{item.code},
+            #{item.showCount}
+            )
+        </foreach>
+    </insert>
     <update id="updateStautusAndCover">
         update file_info
         <set>

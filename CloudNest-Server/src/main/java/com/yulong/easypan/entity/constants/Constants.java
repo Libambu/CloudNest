@@ -25,4 +25,5 @@ public class Constants {
     public static final String REDIS_KEY_DOWNLOAD = "easypan:download";
     public static final Integer REDIS_KEY_FIVEMIN = 60*5;
     public static final Integer LENGTH_50 = 50;
+    public static final String  SESSION_SHARE_KEY = "session_share_key";
 }

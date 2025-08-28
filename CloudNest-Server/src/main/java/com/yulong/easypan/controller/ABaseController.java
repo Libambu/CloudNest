@@ -1,6 +1,7 @@
 package com.yulong.easypan.controller;
 
 import com.yulong.easypan.entity.constants.Constants;
+import com.yulong.easypan.entity.dto.SessionShareDto;
 import com.yulong.easypan.entity.dto.SessionWebUserDto;
 import com.yulong.easypan.entity.enums.ResponseCodeEnum;
 import com.yulong.easypan.entity.vo.ResponseVO;
@@ -19,6 +20,11 @@ import java.io.OutputStream;
 public class ABaseController {
     private static final String STATUS_SUCCESS = "success";
     private static final String STATUS_ERROR = "error";
+
+    protected SessionShareDto getSessionShareFromSession(HttpSession session, String shareId) {
+        SessionShareDto sessionShareDto = (SessionShareDto) session.getAttribute(Constants.SESSION_SHARE_KEY + shareId);
+        return sessionShareDto;
+    }
 
     protected <T> ResponseVO getSuccessResponseVO(T t){
         ResponseVO<T>responseVO = new ResponseVO<>();

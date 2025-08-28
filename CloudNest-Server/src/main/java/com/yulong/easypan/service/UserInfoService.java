@@ -1,6 +1,7 @@
 package com.yulong.easypan.service;
 
 import com.yulong.easypan.entity.dto.SessionWebUserDto;
+import com.yulong.easypan.entity.pjo.UserInfo;
 
 public interface UserInfoService {
     /**
@@ -18,4 +19,6 @@ public interface UserInfoService {
     void updateQqAvatarByUserId(String qqAvatar, String userId);
 
     void updatePwdByUserId(String md5pwd, String userid);
+
+    UserInfo getUserInfoByUserId(String userId);
 }

@@ -568,6 +568,85 @@ public class FileInfoServiceImpl implements FileInfoService {
 
     }
 
+    @Override
+    public FileInfo getFileInfoByFileIdAndUserId(String fileId, String userId) {
+        FileInfo fileInfo = fileInfoMapper.getFileInfoByFileIdAndUserId(fileId,userId);
+        return fileInfo;
+    }
+
+    @Override
+    public void checkRootFilePid(String rootFilePid, String userId, String fileId) {
+        if (fileId.isEmpty()) {
+            throw new BusinessException(ResponseCodeEnum.CODE_600);
+        }
+        if (rootFilePid.equals(fileId)) {
+            return;
+        }
+        checkFilePid(rootFilePid, fileId, userId);
+    }
+
+    @Override
+    public void saveShare(String shareRootFilePid, String shareFileIds, String myFolderId, String shareUserId, String cureentUserId) {
+        String[] shareFileIdArray = shareFileIds.split(",");
+        //目标目录文件列表
+        FileInfoQuery fileInfoQuery = new FileInfoQuery();
+        fileInfoQuery.setUserId(cureentUserId);
+        fileInfoQuery.setFilePid(myFolderId);
+        List<FileInfo> currentFileList = this.fileInfoMapper.selectAllfileinfo(fileInfoQuery);
+        Map<String, FileInfo> currentFileMap = currentFileList.stream().collect(Collectors.toMap(FileInfo::getFileName, Function.identity(), (file1, file2) -> file2));
+        //选择的文件
+        fileInfoQuery = new FileInfoQuery();
+        fileInfoQuery.setUserId(shareUserId);
+        fileInfoQuery.setFileIdArray(shareFileIdArray);
+        List<FileInfo> shareFileList = this.fileInfoMapper.selectAllfileinfo(fileInfoQuery);
+        //重命名选择的文件
+        List<FileInfo> copyFileList = new ArrayList<>();
+        Date curDate = new Date();
+        for (FileInfo item : shareFileList) {
+            FileInfo haveFile = currentFileMap.get(item.getFileName());
+            if (haveFile != null) {
+                item.setFileName(StringTools.rename(item.getFileName()));
+            }
+            findAllSubFile(copyFileList, item, shareUserId, cureentUserId, curDate, myFolderId);
+        }
+        System.out.println(copyFileList.size());
+        this.fileInfoMapper.insertBatch(copyFileList);
+    }
+
+    private void findAllSubFile(List<FileInfo> copyFileList, FileInfo fileInfo, String sourceUserId, String currentUserId, Date curDate, String newFilePid) {
+        String sourceFileId = fileInfo.getFileId();
+        fileInfo.setCreateTime(curDate);
+        fileInfo.setLastUpdateTime(curDate);
+        fileInfo.setFilePid(newFilePid);
+        fileInfo.setUserId(currentUserId);
+        String newFileId = StringTools.getRandomNumber(10);
+        fileInfo.setFileId(newFileId);
+        copyFileList.add(fileInfo);
+        if (FileFolderTypeEnums.FOLDER.getType().equals(fileInfo.getFolderType())) {
+            FileInfoQuery query = new FileInfoQuery();
+            query.setFilePid(sourceFileId);
+            query.setUserId(sourceUserId);
+            List<FileInfo> sourceFileList = this.fileInfoMapper.selectAllfileinfo(query);
+            for (FileInfo item : sourceFileList) {
+                findAllSubFile(copyFileList, item, sourceUserId, currentUserId, curDate, newFileId);
+            }
+        }
+    }
+
+    private void checkFilePid(String rootFilePid, String fileId, String userId) {
+        FileInfo fileInfo = this.fileInfoMapper.getFileInfoByFileIdAndUserId(fileId, userId);
+        if (fileInfo == null) {
+            throw new BusinessException(ResponseCodeEnum.CODE_600);
+        }
+        if ("0".equals(fileInfo.getFilePid())) {
+            throw new BusinessException(ResponseCodeEnum.CODE_600);
+        }
+        if (fileInfo.getFilePid().equals(rootFilePid)) {
+            return;
+        }
+        checkFilePid(rootFilePid, fileInfo.getFilePid(), userId);
+    }
+
     private void checkFileName(String filePid, String userId, String fileName, Integer folderType) {
         FileInfoQuery fileInfoQuery = new FileInfoQuery();
         fileInfoQuery.setFolderType(folderType);

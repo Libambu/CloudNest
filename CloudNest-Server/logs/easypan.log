@@ -10,3 +10,680 @@
 2025-08-28 10:16:51 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
 2025-08-28 10:16:51 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
 2025-08-28 10:16:52 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.961 seconds (JVM running for 4.814)
+2025-08-28 11:17:49 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 19304 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 11:17:49 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 11:17:49 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 11:17:49 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 11:17:49 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-08-28 11:17:50 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 11:17:50 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:17:50 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 11:17:50 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 11:17:50 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 11:17:50 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1631 ms
+2025-08-28 11:17:51 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 11:17:51 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 11:17:51 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 11:17:52 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:17:52 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 11:17:52 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.96 seconds (JVM running for 4.824)
+2025-08-28 11:24:38 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 8368 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 11:24:38 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 11:24:39 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 11:24:39 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 11:24:39 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-08-28 11:24:40 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 11:24:40 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:24:40 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 11:24:40 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 11:24:40 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 11:24:40 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1609 ms
+2025-08-28 11:24:41 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 11:24:41 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 11:24:41 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 11:24:41 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:24:41 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 11:24:42 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 4.12 seconds (JVM running for 4.93)
+2025-08-28 11:26:03 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 11:26:03 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 11:26:03 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 2 ms
+2025-08-28 11:26:09 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 11:26:09 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 11:26:09 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 11:26:10 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:26:21 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into file_share values (?, ?, ?, ?,                                        ?, ?, ?, ?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1
+; Data truncation: Data too long for column 'user_id' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1] with root cause
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at jdk.proxy2/jdk.proxy2.$Proxy95.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy106.insert(Unknown Source)
+	at com.yulong.easypan.service.Impl.FileShareServiceImpl.saveShare(FileShareServiceImpl.java:72)
+	at com.yulong.easypan.service.Impl.FileShareServiceImpl$$FastClassBySpringCGLIB$$470b45eb.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.yulong.easypan.service.Impl.FileShareServiceImpl$$EnhancerBySpringCGLIB$$3655c3b0.saveShare(<generated>)
+	at com.yulong.easypan.controller.ShareController.shareFile(ShareController.java:46)
+	at com.yulong.easypan.controller.ShareController$$FastClassBySpringCGLIB$$a79cd4c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.yulong.easypan.controller.ShareController$$EnhancerBySpringCGLIB$$5d208fa0.shareFile(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:26:25 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into file_share values (?, ?, ?, ?,                                        ?, ?, ?, ?)
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1
+; Data truncation: Data too long for column 'user_id' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1] with root cause
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'user_id' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at jdk.proxy2/jdk.proxy2.$Proxy95.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy106.insert(Unknown Source)
+	at com.yulong.easypan.service.Impl.FileShareServiceImpl.saveShare(FileShareServiceImpl.java:72)
+	at com.yulong.easypan.service.Impl.FileShareServiceImpl$$FastClassBySpringCGLIB$$470b45eb.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.yulong.easypan.service.Impl.FileShareServiceImpl$$EnhancerBySpringCGLIB$$3655c3b0.saveShare(<generated>)
+	at com.yulong.easypan.controller.ShareController.shareFile(ShareController.java:46)
+	at com.yulong.easypan.controller.ShareController$$FastClassBySpringCGLIB$$a79cd4c5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.yulong.easypan.controller.ShareController$$EnhancerBySpringCGLIB$$5d208fa0.shareFile(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:27:24 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:30:49 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 11:30:49 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 11:30:58 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 23704 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 11:30:58 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 11:30:58 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 11:30:58 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 11:30:58 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-08-28 11:30:59 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 11:30:59 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:30:59 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 11:30:59 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 11:30:59 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 11:30:59 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1461 ms
+2025-08-28 11:31:00 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 11:31:00 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 11:31:00 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 11:31:00 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:31:00 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 11:31:01 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.694 seconds (JVM running for 4.339)
+2025-08-28 11:31:07 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 11:31:07 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 11:31:07 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 4 ms
+2025-08-28 11:31:07 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-28 11:31:07 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-28 11:31:18 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 11:31:18 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 11:31:18 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 11:31:18 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:31:33 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:38:22 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 11:38:22 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 11:38:36 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 18540 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 11:38:36 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 11:38:37 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 11:38:37 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 11:38:37 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-08-28 11:38:37 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 11:38:37 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:38:37 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 11:38:37 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 11:38:37 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 11:38:37 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1453 ms
+2025-08-28 11:38:38 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 11:38:38 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 11:38:38 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 11:38:39 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 11:38:39 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 11:38:39 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.657 seconds (JVM running for 4.327)
+2025-08-28 11:38:45 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 11:38:45 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 11:38:45 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-28 11:38:45 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-28 11:38:45 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-28 11:38:56 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 11:38:56 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 11:38:56 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 11:38:56 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:40:00 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 11:42:03 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 11:42:03 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 15:12:03 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 19472 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 15:12:03 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 15:12:03 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 15:12:03 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 15:12:03 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2025-08-28 15:12:04 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 15:12:04 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 15:12:04 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 15:12:04 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 15:12:04 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 15:12:04 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1698 ms
+2025-08-28 15:12:06 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 15:12:06 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 15:12:06 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 15:12:06 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 15:12:06 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 15:12:07 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 4.455 seconds (JVM running for 5.207)
+2025-08-28 15:13:03 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 15:13:03 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 15:13:03 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-28 15:13:12 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 15:13:13 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 15:13:46 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 15:13:46 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 15:15:24 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 11672 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 15:15:24 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 15:15:25 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 15:15:25 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 15:15:25 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-08-28 15:15:26 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 15:15:26 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 15:15:26 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 15:15:26 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 15:15:26 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 15:15:26 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1773 ms
+2025-08-28 15:15:27 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 15:15:27 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 15:15:27 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 15:15:28 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 15:15:28 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 15:15:28 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 4.456 seconds (JVM running for 5.07)
+2025-08-28 15:16:26 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 15:16:26 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 15:16:26 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-28 15:16:33 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 15:16:33 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 15:20:16 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 15:20:16 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 15:57:14 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 22848 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 15:57:14 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 15:57:15 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 15:57:15 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 15:57:15 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2025-08-28 15:57:16 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 15:57:16 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 15:57:16 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 15:57:16 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 15:57:16 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 15:57:16 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1730 ms
+2025-08-28 15:57:17 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 15:57:17 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 15:57:17 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 15:57:18 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 15:57:18 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 15:57:18 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 4.205 seconds (JVM running for 5.039)
+2025-08-28 15:57:26 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 15:57:26 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 15:57:26 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-28 15:57:31 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 15:57:32 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 15:57:32 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 15:57:33 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 15:57:56 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/showShare/checkShareCode
+2025-08-28 15:57:56 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/showShare/checkShareCode
+2025-08-28 15:57:56 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/showShare/checkShareCode]
+2025-08-28 16:00:11 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 16:00:11 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 16:13:31 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 2236 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 16:13:31 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 16:13:32 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 16:13:32 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 16:13:32 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-08-28 16:13:33 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 16:13:33 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 16:13:33 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 16:13:33 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 16:13:33 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 16:13:33 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1722 ms
+2025-08-28 16:13:34 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 16:13:34 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 16:13:34 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 16:13:34 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 16:13:34 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 16:13:35 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 4.183 seconds (JVM running for 4.768)
+2025-08-28 16:13:44 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 16:13:44 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 16:13:44 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-28 16:13:44 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-28 16:13:44 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 16:13:45 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 16:13:49 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-28 16:13:49 [ERROR][com.yulong.easypan.Aspect.GlobalOperationAspect][interceptorDo][63]-> 全局拦截器异常
+com.yulong.easypan.exception.BusinessException: 登录超时，请重新登录
+2025-08-28 16:14:12 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/showShare/loadFileList
+2025-08-28 16:14:12 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/showShare/loadFileList
+2025-08-28 16:14:12 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/showShare/loadFileList]
+2025-08-28 16:15:11 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 16:15:11 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 16:51:18 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 5876 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 16:51:18 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 16:51:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 16:51:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 16:51:19 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2025-08-28 16:51:20 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 16:51:20 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 16:51:20 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 16:51:20 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 16:51:20 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 16:51:20 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1533 ms
+2025-08-28 16:51:21 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 16:51:21 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 16:51:21 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 16:51:21 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 16:51:21 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 16:51:22 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.813 seconds (JVM running for 4.494)
+2025-08-28 16:56:14 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 22620 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 16:56:14 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 16:56:15 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 16:56:15 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 16:56:15 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-28 16:56:15 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 16:56:15 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 16:56:15 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 16:56:15 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 16:56:16 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 16:56:16 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1357 ms
+2025-08-28 16:56:16 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 16:56:16 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 16:56:16 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 16:56:17 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 16:56:17 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 16:56:17 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.358 seconds (JVM running for 3.886)
+2025-08-28 16:56:29 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 16:56:29 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 16:56:29 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-28 16:56:35 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 16:56:35 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 16:56:35 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 16:56:36 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 16:57:00 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/showShare/getFolderInfo
+2025-08-28 16:57:00 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/showShare/getFolderInfo
+2025-08-28 16:57:00 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/showShare/getFolderInfo]
+2025-08-28 16:58:40 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 17:01:02 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/showShare/getFolderInfo
+2025-08-28 17:01:02 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/showShare/getFolderInfo
+2025-08-28 17:01:02 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/showShare/getFolderInfo]
+2025-08-28 17:02:04 [INFO][com.yulong.easypan.utils.ProcessUtils][executeCommand][40]-> 执行命令:ffmpeg -i E:\program\workspace\CloudNest\CloudNest-Server\file\202508\550034669266160_3238572961.png -vf scale=150:-1 E:\program\workspace\CloudNest\CloudNest-Server\file\202508\550034669266160_3238572961_.png -y，已执行完毕
+2025-08-28 17:02:09 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 17:02:09 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 17:02:25 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 10984 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 17:02:25 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 17:02:25 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 17:02:25 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 17:02:25 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-08-28 17:02:26 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 17:02:26 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 17:02:26 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 17:02:26 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 17:02:26 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 17:02:26 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1439 ms
+2025-08-28 17:02:27 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 17:02:27 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 17:02:27 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 17:02:27 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 17:02:27 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 17:02:28 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.989 seconds (JVM running for 4.868)
+2025-08-28 17:03:02 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 17:03:02 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 17:03:02 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 2 ms
+2025-08-28 17:03:02 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 17:03:03 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 17:03:29 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/showShare/getFolderInfo
+2025-08-28 17:03:29 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/showShare/getFolderInfo
+2025-08-28 17:03:29 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/showShare/getFolderInfo]
+2025-08-28 17:03:43 [WARN][org.springframework.web.servlet.PageNotFound][noHandlerFound][1278]-> No mapping for POST /api/showShare/getFolderInfo
+2025-08-28 17:03:43 [WARN][org.springframework.web.servlet.PageNotFound][handleNoHandlerFoundException][515]-> No handler found for POST /api/showShare/getFolderInfo
+2025-08-28 17:03:43 [WARN][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver][logException][208]-> Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for POST /api/showShare/getFolderInfo]
+2025-08-28 17:05:26 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 17:05:26 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2025-08-28 17:47:50 [INFO][com.yulong.easypan.EasypanApplication][logStarting][55]-> Starting EasypanApplication using Java 21.0.5 on YuLong with PID 23096 (E:\program\workspace\CloudNest\CloudNest-Server\target\classes started by libam in E:\program\workspace\CloudNest\CloudNest-Server)
+2025-08-28 17:47:50 [INFO][com.yulong.easypan.EasypanApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2025-08-28 17:47:50 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][multipleStoresDetected][262]-> Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-08-28 17:47:50 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][132]-> Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-08-28 17:47:50 [INFO][org.springframework.data.repository.config.RepositoryConfigurationDelegate][registerRepositoriesIn][201]-> Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-08-28 17:47:51 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 7090 (http)
+2025-08-28 17:47:51 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-7090"]
+2025-08-28 17:47:51 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2025-08-28 17:47:51 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2025-08-28 17:47:51 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2025-08-28 17:47:51 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1499 ms
+2025-08-28 17:47:52 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket1][29]-> 准备生成接口文档
+2025-08-28 17:47:52 [INFO][com.yulong.easypan.config.WebMvcConfiguration][docket2][48]-> 准备生成接口文档
+2025-08-28 17:47:52 [INFO][com.yulong.easypan.config.WebMvcConfiguration][addResourceHandlers][71]-> 开始静态资源映射
+2025-08-28 17:47:52 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-7090"]
+2025-08-28 17:47:52 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 7090 (http) with context path '/api'
+2025-08-28 17:47:53 [INFO][com.yulong.easypan.EasypanApplication][logStarted][61]-> Started EasypanApplication in 3.665 seconds (JVM running for 4.329)
+2025-08-28 17:48:20 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-28 17:48:20 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2025-08-28 17:48:20 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2025-08-28 17:48:26 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2025-08-28 17:48:26 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2025-08-28 17:48:26 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 17:48:27 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 17:48:56 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 17:48:56 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 17:49:08 [INFO][com.yulong.easypan.component.RedisUtils][setex][37]-> 设置redis失败
+2025-08-28 17:49:08 [ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api].[dispatcherServlet]][log][175]-> Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379] with root cause
+java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-28 17:50:38 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2025-08-28 17:50:38 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.

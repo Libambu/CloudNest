@@ -49,4 +49,10 @@ public interface FileInfoService {
     void recoverFileBatch(String userId, String fileIds);
 
     void delFileBatch(String userId, String fileIds, Boolean b);
+
+    FileInfo getFileInfoByFileIdAndUserId(String fileId, String userId);
+
+    void checkRootFilePid(String fileId, String shareUserId, String filePid);
+
+    void saveShare(String fileId, String shareFileIds, String myFolderId, String shareUserId, String userId);
 }

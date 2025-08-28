@@ -37,4 +37,9 @@ public interface FileInfoMapper {
                       @Param("filePidList") List<String> filePidList,
                       @Param("fileIdList") List<String> fileIdList,
                       @Param("oldDelFlag") Integer oldDelFlag);
+
+    @Select("select * from file_info where file_id = #{fileId} and user_id = #{userId}")
+    FileInfo getFileInfoByFileIdAndUserId(String fileId, String userId);
+
+    void insertBatch(List<FileInfo> copyFileList);
 }

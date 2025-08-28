@@ -136,4 +136,9 @@ public class UserInfoServiceImpl implements UserInfoService {
         userInfoMapper.updatePwdByUserId(md5pwd,userid);
     }
 
+    @Override
+    public UserInfo getUserInfoByUserId(String userId) {
+        return userInfoMapper.getUserInfoByUserId(userId);
+    }
+
 }

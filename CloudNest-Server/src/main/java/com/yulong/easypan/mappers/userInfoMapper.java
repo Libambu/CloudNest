@@ -3,6 +3,7 @@ package com.yulong.easypan.mappers;
 
 import com.yulong.easypan.entity.pjo.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 import java.time.LocalDateTime;
@@ -27,4 +28,7 @@ public interface userInfoMapper {
     void updatePwdByUserId(String md5pwd, String userid);
 
     Integer updateUserSpace(String userId, Long userSpace, Long totalSpace);
+
+    @Select("select * from user_info where user_id = #{userId}")
+    UserInfo getUserInfoByUserId(String userId);
 }
