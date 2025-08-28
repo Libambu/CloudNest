@@ -48,7 +48,7 @@ create index file_info_file_pid_index
     on file_info (file_pid);
 
 create index file_info_recover_time_index
-    on file_info (recover_time);
+    on file_info (recovery_time);
 
 create index file_info_user_id_index
     on file_info (user_id);

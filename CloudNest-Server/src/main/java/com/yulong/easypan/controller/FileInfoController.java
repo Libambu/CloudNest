@@ -212,4 +212,11 @@ public class FileInfoController extends CommonFileController {
         super.download(request, response, code);
     }
 
+    @RequestMapping("/delFile")
+    @GlobalInterceptor
+    public ResponseVO delFile(HttpSession session, String fileIds) {
+        SessionWebUserDto webUserDto = getUserInfoSession(session);
+        fileInfoService.removeFile2RecycleBatch(webUserDto.getUserId(), fileIds);
+        return getSuccessResponseVO(null);
+    }
 }

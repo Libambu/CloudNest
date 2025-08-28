@@ -43,4 +43,10 @@ public interface FileInfoService {
     FileInfo rename(String fileId, String userId, String fileName);
 
     void changeFileFolder(String fileIds, String filePid, String userId);
+
+    void removeFile2RecycleBatch(String userId, String fileIds);
+
+    void recoverFileBatch(String userId, String fileIds);
+
+    void delFileBatch(String userId, String fileIds, Boolean b);
 }
