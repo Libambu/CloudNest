@@ -1,8 +1,0 @@
-2025/08/26 11:07:20 [error] 26480#6004: *1 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: yulong.easypan.com, request: "GET / HTTP/1.1", host: "localhost"
-2025/08/26 11:07:20 [error] 26480#6004: *2 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: yulong.easypan.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2025/08/26 14:30:08 [error] 20008#10688: *1 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: yulong.easypan.com, request: "GET / HTTP/1.1", host: "localhost"
-2025/08/26 14:30:08 [error] 20008#10688: *2 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: yulong.easypan.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2025/08/26 15:51:25 [error] 20008#10688: *4 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: yulong.easypan.com, request: "GET / HTTP/1.1", host: "localhost"
-2025/08/26 15:51:25 [error] 20008#10688: *5 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 127.0.0.1, server: yulong.easypan.com, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
-2025/08/26 18:02:37 [alert] 9300#23084: worker process 240 exited with code C0000142
-2025/08/26 18:02:37 [alert] 9300#23084: could not respawn worker

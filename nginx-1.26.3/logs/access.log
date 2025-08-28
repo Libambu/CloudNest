@@ -1,6 +1,0 @@
-127.0.0.1 - - [26/Aug/2025:11:07:20 +0800] "GET / HTTP/1.1" 500 579 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
-127.0.0.1 - - [26/Aug/2025:11:07:20 +0800] "GET /favicon.ico HTTP/1.1" 500 579 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
-127.0.0.1 - - [26/Aug/2025:14:30:08 +0800] "GET / HTTP/1.1" 500 579 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
-127.0.0.1 - - [26/Aug/2025:14:30:08 +0800] "GET /favicon.ico HTTP/1.1" 500 579 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
-127.0.0.1 - - [26/Aug/2025:15:51:25 +0800] "GET / HTTP/1.1" 500 579 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
-127.0.0.1 - - [26/Aug/2025:15:51:25 +0800] "GET /favicon.ico HTTP/1.1" 500 579 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0"
